@@ -14,7 +14,6 @@ RUN set -xe \
     && mkdir -p "$SBT_HOME" \
     && wget -qO - --no-check-certificate "https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz" \ 
       | tar xz -C $SBT_HOME --strip-components=1 \
-    && apk del wget \
-    && sbt sbtVersion
+    && apk del wget
 
 ENTRYPOINT ["sbt"]
