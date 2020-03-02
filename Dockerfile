@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Provides sbt commands"
 LABEL "com.github.actions.icon"="box"
 LABEL "com.github.actions.color"="green"
 
-ENV SBT_VERSION 1.3.1
+ENV SBT_VERSION 1.3.8
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 
