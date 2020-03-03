@@ -8,6 +8,7 @@ LABEL "com.github.actions.color"="green"
 ENV SBT_VERSION 1.3.8
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
+ENV SBT_OPTS="$SBT_OPTS -Dsbt.ivy.home=/home/runner/.ivy2"
 
 RUN set -xe \
     && apk --no-cache --update add bash wget git \
