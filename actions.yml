@@ -1,0 +1,12 @@
+name: 'Setup sbt Action'
+description: 'GitHub Action that setup sbt'
+inputs:
+  version:
+    description: 'Version of sbt'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.version }}
